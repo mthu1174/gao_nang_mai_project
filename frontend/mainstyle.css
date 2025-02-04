@@ -1,0 +1,106 @@
+/*Mô tả
+
+1. **Body**: Font chữ chính là 'Inter', nền màu be nhẹ (#FFFDF5), màu chữ nâu đậm (#6B3F22).
+2. **Tiêu đề (h1, h2, h3, h4, h5, h6)**: Font chữ 'DTPhudu', màu chữ xanh lá đậm (#4E733D).
+3. **Liên kết (a)**: Màu chữ vàng sáng (#EAAE29), chuyển sang màu vàng đậm hơn (#AE7F51) khi di chuột.
+4. **Thanh điều hướng (nav)**: Nền màu xanh lá đậm (#4E733D), màu chữ trắng (#FFFDF5).
+5. **Nút (button)**: Nền màu vàng sáng (#EAAE29), chuyển sang màu vàng nhạt (#FACF5E) khi di chuột, font chữ 'DTPhudu'.
+6. **Footer**: Nền màu xanh lá đậm (#608C3D), màu chữ be nhẹ (#FFF697).
+7. **Thẻ sản phẩm (card)**: Nền màu trắng (#FFFFFF), viền màu xanh lá đậm (#4E733D), tiêu đề thẻ màu xanh lá đậm, mô tả màu nâu đậm.
+*/
+
+@font-face {
+    font-family: 'DTPhudu';
+    src: url('fonts/DTPhudu-Black.otf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fefefe; /* Màu nền chính */
+    color: #4E733D; /* Màu chữ xanh lá đậm */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cài đặt cho các tiêu đề */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DTPhudu', sans-serif;
+    color: #EAAE29; /* Màu vàng */
+}
+
+/* Cài đặt cho các liên kết */
+a {
+    color: #AE7F51; /* Màu nâu nhạt */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6B3F22; /* Màu nâu đậm khi di chuột */
+}
+
+/* Cài đặt cho thanh điều hướng */
+nav {
+    background-color: #4E733D; /* Màu xanh lá đậm */
+    padding: 10px;
+}
+
+nav a {
+    color: #FFFDF5; /* Màu chữ trắng */
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #FACF5E; /* Màu vàng nhạt khi di chuột */
+}
+
+/* Cài đặt cho các nút */
+button {
+    background-color: #EAAE29; /* Màu vàng */
+    color: #4E733D; /* Màu xanh lá đậm */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'DTPhudu', sans-serif; /* Sử dụng font chữ DTPhudu */
+}
+
+button:hover {
+    background-color: #CB793D; /* Màu cam đậm khi di chuột */
+}
+
+/* Cài đặt cho footer */
+footer {
+    background-color: #4E733D; /* Màu xanh lá đậm */
+    color: #FFF697; /* Màu chữ be nhạt */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Cài đặt cho container */
+.container {
+    padding: 20px;
+}
+
+/* Cài đặt cho các thẻ sản phẩm */
+.card {
+    background-color: #fffbcd; /* Màu nền cho thẻ sản phẩm */
+    border: 2px solid #4E733D; /* Viền dày hơn màu xanh lá đậm */
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+}
+
+.card h3 {
+    color: #4E733D; /* Màu tiêu đề thẻ xanh lá đậm */
+}
+
+.card p {
+    color: #6B3F22; /* Màu mô tả nâu đậm */
+}
+
+.card img {
+    width: 100%; /* Ảnh sản phẩm */
+    border-bottom: 1px solid #4E733D; /* Đường viền dưới ảnh */
+    margin-bottom: 15px;
+}
